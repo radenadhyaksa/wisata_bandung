@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:wisata_bandung/detail_screen.dart';
 import 'package:wisata_bandung/model/tourism_place.dart';
-
-
-// AppBaruntuk judul halaman
+ 
+ 
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class MainScreen extends StatelessWidget {
           return InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return DetailScreen();
+                return DetailScreen(place: place);
               }));
             },
             child: Card(
