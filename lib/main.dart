@@ -118,7 +118,11 @@ import 'package:flutter/material.dart';
 import 'package:wisata_bandung/detail_screen.dart';
 import 'package:wisata_bandung/model/tourism_place.dart';
 
-class MainScreen extends StatelessWidget {
+void main(List<String> args) {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
