@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:wisata_bandung/model/tourism_place.dart';
- 
+
 var informationTextStyle = TextStyle(fontFamily: 'Oxygen');
- 
+
 class DetailScreen extends StatelessWidget {
   final TourismPlace place;
- 
+
   DetailScreen({required this.place});
- 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -125,18 +125,15 @@ class DetailScreen extends StatelessWidget {
     );
   }
 }
- 
- 
+
 class FavoriteButton extends StatefulWidget {
   @override
   _FavoriteButtonState createState() => _FavoriteButtonState();
 }
- 
- 
+
 class _FavoriteButtonState extends State<FavoriteButton> {
   bool isFavorite = false;
- 
- 
+
   @override
   Widget build(BuildContext context) {
     return IconButton(
