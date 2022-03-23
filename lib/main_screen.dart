@@ -3,10 +3,10 @@ import 'package:wisata_bandung/detail_screen.dart';
 import 'package:wisata_bandung/model/tourism_place.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(MainScreen());
 }
 
-class MyApp extends StatelessWidget {
+class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
