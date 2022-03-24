@@ -13,6 +13,24 @@ class MainScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Wisata Bandung'),
       ),
+      //navigation bar
+      // body: _pages[currentIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        // currentIndex: currentIndex,
+        items: const [
+          BottomNavigationBarItem(
+            label: 'Home',
+            icon: Icon(Icons.home_rounded),
+          ),
+          BottomNavigationBarItem(
+            label: 'Profile',
+            icon: Icon(Icons.person_rounded),
+          ),
+        ],
+        // onTap: (index) => setState(() => currentIndex = index),
+      ),
+
+      // body Listview
       body: ListView.builder(
         itemBuilder: (context, index) {
           final TourismPlace place = tourismPlaceList[index];
