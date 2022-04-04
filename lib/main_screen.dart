@@ -7,30 +7,14 @@ void main(List<String> args) {
 }
 
 class MainScreen extends StatelessWidget {
+  const MainScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Wisata Bandung'),
+      appBar: AppBar( backgroundColor: Color.fromARGB(220, 131, 202, 73),
+        title: Text('Bandung Destination'),
       ),
-      //navigation bar
-      // body: _pages[currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        // currentIndex: currentIndex,
-        items: const [
-          BottomNavigationBarItem(
-            label: 'Home',
-            icon: Icon(Icons.home_rounded),
-          ),
-          BottomNavigationBarItem(
-            label: 'Profile',
-            icon: Icon(Icons.person_rounded),
-          ),
-        ],
-        // onTap: (index) => setState(() => currentIndex = index),
-      ),
-
-      // body Listview
       body: ListView.builder(
         itemBuilder: (context, index) {
           final TourismPlace place = tourismPlaceList[index];
